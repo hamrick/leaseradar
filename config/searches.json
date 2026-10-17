@@ -1,0 +1,15 @@
+{
+  "zip": "78641",
+  "radius": 150,
+  "maxEffectiveMonthly": 500,
+  "searches": [
+    {"make":"Kia","model":"Telluride","trim":"X-Line EX / SX","radius":250,"blackOnly":true,"towCandidate":true,"priority":"dream"},
+    {"make":"Hyundai","model":"Santa Fe","trim":"XRT / Calligraphy","radius":150,"blackOnly":true,"towCandidate":true},
+    {"make":"Jeep","model":"Grand Cherokee","trim":"Dark appearance configurations","radius":150,"blackOnly":true,"towCandidate":true},
+    {"make":"Ford","model":"Explorer","trim":"ST-Line / ST","radius":150,"blackOnly":true,"towCandidate":true},
+    {"make":"Hyundai","model":"Palisade","trim":"XRT PRO / Calligraphy","radius":150,"blackOnly":true,"towCandidate":true},
+    {"make":"GMC","model":"Sierra 1500","trim":"Elevation / black packages","radius":150,"blackOnly":true,"towCandidate":true},
+    {"make":"Kia","model":"EV9","trim":"Land / GT-Line","radius":150,"blackOnly":true,"towCandidate":true},
+    {"make":"Ford","model":"Bronco","trim":"Black appearance configurations","radius":150,"blackOnly":true,"towCandidate":true}
+  ]
+}

@@ -1,37 +1,61 @@
 # LeaseRadar
 
-A self-contained, mobile-first lease research dashboard built for one person. It keeps the numbers, shortlist, and saved offers in one quiet workspace without adding accounts, subscriptions, or product infrastructure.
+A single-user dashboard for live dealer inventory, current manufacturer lease programs, watched vehicles, effective lease costs, and saved dealer quotes.
 
-Open `index.html` in any modern browser. There is no build process and there are no dependencies.
+The public site is hosted on GitHub Pages at [hamrick.github.io/leaseradar](https://hamrick.github.io/leaseradar/). It contains no authentication, analytics, or multi-user product infrastructure.
 
-## Features
+## What works
 
-- Vehicle shortlist and persistent watchlist
-- Search and towing-candidate filters
-- Saved advertised offers, estimates and written dealer quotes
-- Effective monthly cost calculator and comparison table
-- JSON export/import for backups
-- Dealer-inventory web search links (not verified inventory)
+- Dealer inventory near ZIP code `78641`, filtered to the configured vehicle shortlist
+- Current OEM lease programs for watched makes and models
+- Distance, price, color, and tow-candidate filters
+- VIN watchlist stored in the browser
+- Scheduled refresh every six hours
+- GitHub Issue alerts for newly seen matching VINs and lease programs
+- Effective-payment calculator
+- Saved quote comparison and JSON backup/restore
 
-## Important limitations
+Inventory and incentive data comes from the MarketCheck APIs. LeaseRadar keeps the API key in GitHub Actions secrets and publishes only the normalized results used by the dashboard.
 
-This is an offline-first MVP, **not a live-data service**. Vehicle specs and tow capability must be verified by trim and VIN. It does not currently fetch offers, monitor price changes, notify users, sync devices, or connect to dealer inventory feeds. Saved data is browser-local; back it up using the export button.
+## One-time live-data setup
 
-## Use
+1. Create a MarketCheck API key at [developers.marketcheck.com](https://developers.marketcheck.com/).
+2. In this repository, open **Settings → Secrets and variables → Actions**.
+3. Add a repository secret named `MARKETCHECK_API_KEY`.
+4. Open **Actions → Refresh LeaseRadar data → Run workflow**.
+5. Watch this repository's Issues if you want GitHub to notify you about newly found matches.
 
-1. Open `index.html`.
-2. Add vehicles to the watchlist and enter advertised offers or dealer quotes.
-3. Use the calculator and comparison table to compare true effective monthly costs.
-4. Export a JSON backup before changing browsers or devices.
+Until the secret is configured, the site shows an explicit setup state. It never presents demo records as live data.
 
-## Optional deployment
+## Search and alert rules
 
-The current app is a static file and can be hosted on any static provider. Live alerts or automated deal collection would require a small backend, scheduled checks, approved data sources, storage, and an email service. Those are future personal-tool enhancements, not prerequisites for using this version.
+Edit [`config/searches.json`](config/searches.json) to change ZIP code, radius, watched models, trim notes, color requirements, and tow-candidate flags. The scheduled workflow reads that file on every run.
 
-## Calculator convention
+## How the refresh works
 
-The total due at signing **includes the first monthly payment**. Effective cost = ((term - 1) × monthly payment + due at signing - refundable deposit) / term. Taxes and fees are only accounted for if entered in the payment/DAS figures.
+The workflow in [`.github/workflows/refresh-data.yml`](.github/workflows/refresh-data.yml):
 
-## Privacy
+1. Searches MarketCheck's active new-car inventory for each configured model.
+2. Retrieves current OEM lease programs for the watched makes near the configured ZIP code.
+3. Normalizes results into `data/inventory.json` and `data/incentives.json`.
+4. Opens a GitHub issue when a later refresh discovers a new matching VIN or program.
+5. Commits changed data so GitHub Pages publishes the new results.
 
-All watchlist and offer data stays in the current browser's local storage unless it is exported manually. The app contains no analytics, authentication, or remote data sync.
+The first successful refresh establishes a baseline and does not create a flood of alert issues.
+
+## Accuracy and privacy
+
+- Inventory and offers can change between refreshes. Always verify price, availability, equipment, towing capacity, eligibility, taxes, fees, and lease terms with the dealer or lessor.
+- MarketCheck supplies inventory and manufacturer programs; it does not guarantee a vehicle-specific lease quote.
+- Saved dealer quotes and watched VINs stay in the current browser's local storage unless manually exported.
+- GitHub Issue alerts and the normalized feed are public because this repository and its Pages site are public. The API key remains private.
+
+## Local use
+
+Serve the repository with any static web server. Opening `index.html` directly may prevent JSON loading in some browsers.
+
+```sh
+python3 -m http.server 4173
+```
+
+Then visit `http://localhost:4173`.
