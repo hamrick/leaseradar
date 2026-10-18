@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "updatedAt": "2026-10-18T04:41:50.583Z",
+  "updatedAt": "2026-10-18T11:17:06.626Z",
   "source": "MarketCheck OEM incentives",
   "listings": [
     {
@@ -19,7 +19,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "kia.com",
-      "statusDate": "2026-10-17T05:53:15.000Z",
+      "statusDate": "2026-10-18T05:53:20.000Z",
       "scrapedAt": "2026-10-02T01:53:40.000Z"
     },
     {
@@ -38,7 +38,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "kia.com",
-      "statusDate": "2026-10-17T05:53:04.000Z",
+      "statusDate": "2026-10-18T05:53:22.000Z",
       "scrapedAt": "2026-10-02T01:53:32.000Z"
     },
     {
@@ -76,7 +76,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-17T05:25:04.000Z",
+      "statusDate": "2026-10-18T05:24:10.000Z",
       "scrapedAt": "2026-10-02T07:46:20.000Z"
     },
     {
@@ -95,7 +95,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-17T05:25:05.000Z",
+      "statusDate": "2026-10-18T05:24:09.000Z",
       "scrapedAt": "2026-10-02T07:46:27.000Z"
     },
     {
@@ -133,7 +133,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-17T05:25:04.000Z",
+      "statusDate": "2026-10-18T05:24:08.000Z",
       "scrapedAt": "2026-10-02T07:46:20.000Z"
     },
     {
@@ -152,7 +152,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-10-17T07:10:35.000Z",
+      "statusDate": "2026-10-18T05:28:15.000Z",
       "scrapedAt": "2026-10-02T21:27:24.000Z"
     },
     {
@@ -171,7 +171,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-10-17T07:10:27.000Z",
+      "statusDate": "2026-10-18T05:28:09.000Z",
       "scrapedAt": "2026-10-16T07:08:22.000Z"
     },
     {
@@ -192,25 +192,6 @@
       "source": "ford.com",
       "statusDate": "2026-10-18T04:35:05.000Z",
       "scrapedAt": "2026-10-06T04:26:33.000Z"
-    },
-    {
-      "id": "5492da9c49c1071c14e4030c1961f6988f493b6e1d0cd52745521bd52c902bf3",
-      "make": "GMC",
-      "model": "Sierra 1500",
-      "trim": "Elevation Crew Cab",
-      "year": 2026,
-      "offerType": "lease",
-      "monthly": null,
-      "term": null,
-      "dueAtSigning": null,
-      "mileageLimit": "20000",
-      "validThrough": "11/02/2026",
-      "title": "",
-      "programName": "",
-      "sourceUrl": "",
-      "source": "gmc.com",
-      "statusDate": "2026-10-16T02:54:40.000Z",
-      "scrapedAt": "2026-10-11T03:33:01.000Z"
     }
   ]
 }
