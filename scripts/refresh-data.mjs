@@ -1,14 +1,27 @@
 import fs from 'node:fs/promises';
 
 const API='https://api.marketcheck.com/v2';
-const apiKey=process.env.MARKETCHECK_API_KEY;
+const apiKey=(process.env.MARKETCHECK_API_KEY||'').trim();
 const token=process.env.GITHUB_TOKEN;
 const repo=process.env.GITHUB_REPOSITORY;
 const config=JSON.parse(await fs.readFile('config/searches.json','utf8'));
 const now=new Date().toISOString();
 
 async function read(path,fallback){try{return JSON.parse(await fs.readFile(path,'utf8'))}catch{return fallback}}
-async function api(path,params={}){const url=new URL(API+path);Object.entries({...params,api_key:apiKey}).forEach(([k,v])=>v!==undefined&&v!==null&&url.searchParams.set(k,String(v)));const response=await fetch(url,{headers:{Accept:'application/json'}});if(!response.ok)throw new Error(`${path} returned ${response.status}: ${(await response.text()).slice(0,300)}`);return response.json()}
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+async function api(path,params={}){
+  const url=new URL(API+path);
+  Object.entries({...params,api_key:apiKey}).forEach(([k,v])=>v!==undefined&&v!==null&&url.searchParams.set(k,String(v)));
+  for(let attempt=0;attempt<4;attempt+=1){
+    const response=await fetch(url,{headers:{Accept:'application/json'}});
+    if(response.ok)return response.json();
+    const body=(await response.text()).slice(0,300);
+    if(response.status!==429||/monthly api quota exhausted/i.test(body)||attempt===3)throw new Error(`${path} returned ${response.status}: ${body}`);
+    const retryAfter=Number(response.headers.get('retry-after'));
+    await sleep(Number.isFinite(retryAfter)&&retryAfter>0?retryAfter*1000:1100*(attempt+1));
+  }
+}
+async function pacedMap(items,fn){const results=[];for(const item of items){results.push(await fn(item));await sleep(250)}return results}
 const first=(...values)=>values.find(v=>v!==undefined&&v!==null&&v!=='');
 const number=(...values)=>{const value=first(...values),n=Number(value);return Number.isFinite(n)?n:null};
 const text=(...values)=>String(first(...values)||'').trim();
@@ -23,9 +36,9 @@ if(!apiKey){console.log('MARKETCHECK_API_KEY is not configured; leaving the publ
 
 const previousInventory=await read('data/inventory.json',{listings:[]});const previousPrograms=await read('data/incentives.json',{listings:[]});
 try{
-  const inventoryResponses=await Promise.all(config.searches.map(rule=>api('/search/car/active',{zip:config.zip,radius:rule.radius||config.radius,car_type:'new',make:rule.make,model:rule.model,rows:50,sort_by:'dist',sort_order:'asc'}).then(data=>({rule,data}))));
+  const inventoryResponses=await pacedMap(config.searches,async rule=>({rule,data:await api('/search/car/active',{zip:config.zip,radius:Math.min(rule.radius||config.radius,100),car_type:'new',make:rule.make,model:rule.model,rows:50,sort_by:'dist',sort_order:'asc'})}));
   const all=inventoryResponses.flatMap(({rule,data})=>(data.listings||data.cars||[]).map(x=>normalizeListing(x,rule))).filter(x=>x.vin&&x.url);const listings=[...new Map(all.map(x=>[x.vin,x])).values()].sort((a,b)=>(a.distance??Infinity)-(b.distance??Infinity));
-  const makes=[...new Set(config.searches.map(x=>x.make))];const incentiveResponses=await Promise.all(makes.map(make=>api(`/search/car/incentive/${encodeURIComponent(make.toLowerCase())}/${config.zip}`,{offer_type:'lease',rows:50}).catch(()=>api('/search/car/incentive/oem',{country:'us',zip:config.zip,radius:config.radius,make,offer_type:'lease',rows:50}))));
+  const makes=[...new Set(config.searches.map(x=>x.make))];const incentiveResponses=await pacedMap(makes,make=>api(`/search/car/incentive/${encodeURIComponent(make.toLowerCase())}/${config.zip}`,{offer_type:'lease',rows:50}).catch(()=>api('/search/car/incentive/oem',{country:'us',zip:config.zip,radius:Math.min(config.radius,100),make,offer_type:'lease',rows:50})));
   const watched=new Set(config.searches.map(x=>`${x.make}|${x.model}`.toLowerCase()));const incentives=incentiveResponses.flatMap(data=>(data.listings||data.incentives||[]).map(normalizeIncentive)).filter(x=>x.id&&watched.has(`${x.make}|${x.model}`.toLowerCase()));
   const uniqueIncentives=[...new Map(incentives.map(x=>[x.id,x])).values()];
   const oldVins=new Set((previousInventory.listings||[]).map(x=>x.vin)),oldPrograms=new Set((previousPrograms.listings||[]).map(x=>x.id));const newInventory=listings.filter(x=>!oldVins.has(x.vin)),newPrograms=uniqueIncentives.filter(x=>!oldPrograms.has(x.id));
