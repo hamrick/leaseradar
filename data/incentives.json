@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "updatedAt": "2026-10-23T04:59:31.360Z",
+  "updatedAt": "2026-10-23T11:46:51.606Z",
   "source": "MarketCheck OEM incentives",
   "listings": [
     {
@@ -19,7 +19,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "kia.com",
-      "statusDate": "2026-10-22T08:34:28.000Z",
+      "statusDate": "2026-10-23T08:15:56.000Z",
       "scrapedAt": "2026-10-02T01:53:40.000Z"
     },
     {
@@ -38,7 +38,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "kia.com",
-      "statusDate": "2026-10-22T08:34:15.000Z",
+      "statusDate": "2026-10-23T08:16:07.000Z",
       "scrapedAt": "2026-10-02T01:53:32.000Z"
     },
     {
@@ -76,7 +76,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-22T08:11:00.000Z",
+      "statusDate": "2026-10-23T07:46:51.000Z",
       "scrapedAt": "2026-10-02T07:46:20.000Z"
     },
     {
@@ -95,7 +95,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-22T08:11:00.000Z",
+      "statusDate": "2026-10-23T07:46:51.000Z",
       "scrapedAt": "2026-10-02T07:46:27.000Z"
     },
     {
@@ -114,7 +114,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-22T06:11:53.000Z",
+      "statusDate": "2026-10-23T05:21:02.000Z",
       "scrapedAt": "2026-10-02T03:02:09.000Z"
     },
     {
@@ -133,7 +133,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-22T08:11:00.000Z",
+      "statusDate": "2026-10-23T07:46:51.000Z",
       "scrapedAt": "2026-10-02T07:46:20.000Z"
     },
     {
@@ -152,7 +152,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-10-22T08:05:50.000Z",
+      "statusDate": "2026-10-23T07:39:44.000Z",
       "scrapedAt": "2026-10-02T21:27:24.000Z"
     },
     {
@@ -171,7 +171,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-10-22T08:05:50.000Z",
+      "statusDate": "2026-10-23T07:39:44.000Z",
       "scrapedAt": "2026-10-16T07:08:22.000Z"
     },
     {
