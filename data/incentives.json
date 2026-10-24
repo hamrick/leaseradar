@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "updatedAt": "2026-10-24T04:44:36.636Z",
+  "updatedAt": "2026-10-24T11:11:37.853Z",
   "source": "MarketCheck OEM incentives",
   "listings": [
     {
@@ -19,7 +19,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "kia.com",
-      "statusDate": "2026-10-23T08:15:56.000Z",
+      "statusDate": "2026-10-24T08:47:02.000Z",
       "scrapedAt": "2026-10-02T01:53:40.000Z"
     },
     {
@@ -38,7 +38,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "kia.com",
-      "statusDate": "2026-10-23T08:16:07.000Z",
+      "statusDate": "2026-10-24T08:40:00.000Z",
       "scrapedAt": "2026-10-02T01:53:32.000Z"
     },
     {
@@ -76,7 +76,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-23T07:46:51.000Z",
+      "statusDate": "2026-10-24T08:13:43.000Z",
       "scrapedAt": "2026-10-02T07:46:20.000Z"
     },
     {
@@ -95,7 +95,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-23T07:46:51.000Z",
+      "statusDate": "2026-10-24T08:14:00.000Z",
       "scrapedAt": "2026-10-02T07:46:27.000Z"
     },
     {
@@ -114,7 +114,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-23T05:21:02.000Z",
+      "statusDate": "2026-10-24T05:46:59.000Z",
       "scrapedAt": "2026-10-02T03:02:09.000Z"
     },
     {
@@ -133,7 +133,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-23T07:46:51.000Z",
+      "statusDate": "2026-10-24T08:14:00.000Z",
       "scrapedAt": "2026-10-02T07:46:20.000Z"
     },
     {
@@ -152,7 +152,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-10-23T07:39:44.000Z",
+      "statusDate": "2026-10-24T08:08:16.000Z",
       "scrapedAt": "2026-10-02T21:27:24.000Z"
     },
     {
@@ -171,11 +171,11 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-10-23T07:39:44.000Z",
+      "statusDate": "2026-10-24T08:08:16.000Z",
       "scrapedAt": "2026-10-16T07:08:22.000Z"
     },
     {
-      "id": "3b92d88dd74d36cc2599e503873cadcbadac2b6b0cc46acc10b770e8faddab83",
+      "id": "350b6efeef382daa98d72a8a2f521b19aba7a0a287c7208130abf4881f93ea5b",
       "make": "Ford",
       "model": "Explorer",
       "trim": "Active",
@@ -190,8 +190,8 @@
       "programName": "",
       "sourceUrl": "",
       "source": "ford.com",
-      "statusDate": "2026-10-22T06:51:00.000Z",
-      "scrapedAt": "2026-10-06T04:26:33.000Z"
+      "statusDate": "2026-10-24T06:46:45.000Z",
+      "scrapedAt": "2026-10-23T06:17:58.000Z"
     }
   ]
 }
