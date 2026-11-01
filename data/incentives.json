@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "updatedAt": "2026-10-27T05:13:22.345Z",
+  "updatedAt": "2026-11-01T06:17:36.303Z",
   "source": "MarketCheck OEM incentives",
   "listings": [
     {
@@ -19,7 +19,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "kia.com",
-      "statusDate": "2026-10-26T06:01:53.000Z",
+      "statusDate": "2026-11-01T02:59:12.000Z",
       "scrapedAt": "2026-10-02T01:53:40.000Z"
     },
     {
@@ -38,7 +38,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "kia.com",
-      "statusDate": "2026-10-26T06:01:46.000Z",
+      "statusDate": "2026-11-01T02:59:19.000Z",
       "scrapedAt": "2026-10-02T01:53:32.000Z"
     },
     {
@@ -57,7 +57,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-27T04:51:07.000Z",
+      "statusDate": "2026-11-01T02:05:52.000Z",
       "scrapedAt": "2026-10-02T06:38:57.000Z"
     },
     {
@@ -76,7 +76,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-26T05:29:03.000Z",
+      "statusDate": "2026-11-01T02:50:18.000Z",
       "scrapedAt": "2026-10-02T07:46:20.000Z"
     },
     {
@@ -95,7 +95,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-26T05:29:13.000Z",
+      "statusDate": "2026-11-01T02:50:17.000Z",
       "scrapedAt": "2026-10-02T07:46:27.000Z"
     },
     {
@@ -114,7 +114,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-27T03:29:54.000Z",
+      "statusDate": "2026-11-01T01:51:53.000Z",
       "scrapedAt": "2026-10-02T03:02:09.000Z"
     },
     {
@@ -133,7 +133,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-10-26T05:29:14.000Z",
+      "statusDate": "2026-11-01T02:50:17.000Z",
       "scrapedAt": "2026-10-02T07:46:20.000Z"
     },
     {
@@ -152,7 +152,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-10-26T04:57:17.000Z",
+      "statusDate": "2026-11-01T03:07:49.000Z",
       "scrapedAt": "2026-10-02T21:27:24.000Z"
     },
     {
@@ -171,7 +171,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-10-26T04:57:17.000Z",
+      "statusDate": "2026-11-01T03:07:51.000Z",
       "scrapedAt": "2026-10-16T07:08:22.000Z"
     },
     {
@@ -190,7 +190,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "ford.com",
-      "statusDate": "2026-10-26T04:50:42.000Z",
+      "statusDate": "2026-11-01T04:41:56.000Z",
       "scrapedAt": "2026-10-23T06:17:58.000Z"
     }
   ]
