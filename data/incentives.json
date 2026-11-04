@@ -1,8 +1,27 @@
 {
   "status": "live",
-  "updatedAt": "2026-11-04T06:36:27.780Z",
+  "updatedAt": "2026-11-04T19:50:47.024Z",
   "source": "MarketCheck OEM incentives",
   "listings": [
+    {
+      "id": "9d814c3072b6b103ecdcfbe7aa4ff9f8637e32cddf3bd6a11b64a450bf642d2e",
+      "make": "Hyundai",
+      "model": "Palisade",
+      "trim": "Limited",
+      "year": 2026,
+      "offerType": "lease",
+      "monthly": null,
+      "term": null,
+      "dueAtSigning": 3999,
+      "mileageLimit": "10000",
+      "validThrough": "11/30/2026",
+      "title": "",
+      "programName": "",
+      "sourceUrl": "",
+      "source": "hyundaiusa.com",
+      "statusDate": "2026-11-04T14:59:30.000Z",
+      "scrapedAt": "2026-11-04T03:04:26.000Z"
+    },
     {
       "id": "81fe6d8b7563166d06e9e1bc56e249818f89c40df53a46281b25edef31f441b7",
       "make": "Hyundai",
@@ -19,32 +38,13 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-04T05:32:06.000Z",
+      "statusDate": "2026-11-04T17:29:23.000Z",
       "scrapedAt": "2026-11-03T23:22:43.000Z"
     },
     {
-      "id": "6e689171852e6f5593310f7c48eed20fe5032f20be36b758dc1aa6e89e8b08ae",
+      "id": "281e70f3710e0f33edf09b623c946382be4bf2eaf3d5856eceb7b0cbe5c01168",
       "make": "Hyundai",
       "model": "Santa Fe",
-      "trim": "Limited",
-      "year": 2026,
-      "offerType": "lease",
-      "monthly": null,
-      "term": null,
-      "dueAtSigning": 3999,
-      "mileageLimit": "10000",
-      "validThrough": "11/02/2026",
-      "title": "",
-      "programName": "",
-      "sourceUrl": "",
-      "source": "hyundaiusa.com",
-      "statusDate": "2026-11-03T21:24:22.000Z",
-      "scrapedAt": "2026-10-02T06:38:57.000Z"
-    },
-    {
-      "id": "72a4dbe2d5b1a555349ca3ea15b0662acf1a2f813ccc2b16f4fefde97178b2c3",
-      "make": "Hyundai",
-      "model": "Palisade",
       "trim": "Calligraphy",
       "year": 2026,
       "offerType": "lease",
@@ -52,13 +52,13 @@
       "term": null,
       "dueAtSigning": 3999,
       "mileageLimit": "10000",
-      "validThrough": "11/02/2026",
+      "validThrough": "11/30/2026",
       "title": "",
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-03T20:56:51.000Z",
-      "scrapedAt": "2026-10-02T03:02:09.000Z"
+      "statusDate": "2026-11-04T15:39:17.000Z",
+      "scrapedAt": "2026-11-04T03:43:16.000Z"
     },
     {
       "id": "2d809e99f0802b7a69cc2b5d04fee6111d9015ec1bcb0ee4f7cfde485e476c01",
@@ -76,8 +76,27 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-04T05:32:06.000Z",
+      "statusDate": "2026-11-04T17:29:33.000Z",
       "scrapedAt": "2026-11-03T23:22:59.000Z"
+    },
+    {
+      "id": "10a9eb7f7daa898707fd1309462374e5128e092b1a133d148f94193bf904ccaa",
+      "make": "Hyundai",
+      "model": "Santa Fe",
+      "trim": "SE",
+      "year": 2026,
+      "offerType": "lease",
+      "monthly": null,
+      "term": null,
+      "dueAtSigning": 3999,
+      "mileageLimit": "10000",
+      "validThrough": "11/30/2026",
+      "title": "",
+      "programName": "",
+      "sourceUrl": "",
+      "source": "hyundaiusa.com",
+      "statusDate": "2026-11-04T15:39:17.000Z",
+      "scrapedAt": "2026-11-04T03:43:17.000Z"
     },
     {
       "id": "0cea0977398d513881606f173c977734e0f20b0ea09611221fba1da0b6a41152",
@@ -95,7 +114,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-11-04T05:49:03.000Z",
+      "statusDate": "2026-11-04T17:46:36.000Z",
       "scrapedAt": "2026-11-03T11:46:15.000Z"
     },
     {
