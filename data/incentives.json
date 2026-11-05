@@ -1,8 +1,46 @@
 {
   "status": "live",
-  "updatedAt": "2026-11-04T19:50:47.024Z",
+  "updatedAt": "2026-11-05T06:56:35.304Z",
   "source": "MarketCheck OEM incentives",
   "listings": [
+    {
+      "id": "71b8c5c634598072e837408fe8625048b647728a047f8c1bb00600cc5f1ece45",
+      "make": "KIA",
+      "model": "Telluride",
+      "trim": "S",
+      "year": 2027,
+      "offerType": "lease",
+      "monthly": null,
+      "term": null,
+      "dueAtSigning": 3999,
+      "mileageLimit": "10000",
+      "validThrough": "01/04/2027",
+      "title": "",
+      "programName": "",
+      "sourceUrl": "",
+      "source": "kia.com",
+      "statusDate": "2026-11-05T05:46:01.000Z",
+      "scrapedAt": "2026-11-04T23:41:09.000Z"
+    },
+    {
+      "id": "8a9c7376af9223be099e65469fedb34cb45a23c2d6809af4bb1670e470280a75",
+      "make": "KIA",
+      "model": "EV9",
+      "trim": "Wind AWD",
+      "year": 2026,
+      "offerType": "lease",
+      "monthly": null,
+      "term": null,
+      "dueAtSigning": 4999,
+      "mileageLimit": "10000",
+      "validThrough": "01/04/2027",
+      "title": "",
+      "programName": "",
+      "sourceUrl": "",
+      "source": "kia.com",
+      "statusDate": "2026-11-05T05:46:17.000Z",
+      "scrapedAt": "2026-11-04T23:41:43.000Z"
+    },
     {
       "id": "9d814c3072b6b103ecdcfbe7aa4ff9f8637e32cddf3bd6a11b64a450bf642d2e",
       "make": "Hyundai",
@@ -19,7 +57,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-04T14:59:30.000Z",
+      "statusDate": "2026-11-05T03:08:37.000Z",
       "scrapedAt": "2026-11-04T03:04:26.000Z"
     },
     {
@@ -38,7 +76,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-04T17:29:23.000Z",
+      "statusDate": "2026-11-05T05:33:33.000Z",
       "scrapedAt": "2026-11-03T23:22:43.000Z"
     },
     {
@@ -57,7 +95,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-04T15:39:17.000Z",
+      "statusDate": "2026-11-05T03:52:39.000Z",
       "scrapedAt": "2026-11-04T03:43:16.000Z"
     },
     {
@@ -76,7 +114,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-04T17:29:33.000Z",
+      "statusDate": "2026-11-05T05:33:34.000Z",
       "scrapedAt": "2026-11-03T23:22:59.000Z"
     },
     {
@@ -95,7 +133,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-04T15:39:17.000Z",
+      "statusDate": "2026-11-05T03:52:38.000Z",
       "scrapedAt": "2026-11-04T03:43:17.000Z"
     },
     {
@@ -114,11 +152,11 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-11-04T17:46:36.000Z",
+      "statusDate": "2026-11-05T06:05:08.000Z",
       "scrapedAt": "2026-11-03T11:46:15.000Z"
     },
     {
-      "id": "350b6efeef382daa98d72a8a2f521b19aba7a0a287c7208130abf4881f93ea5b",
+      "id": "99eebcb021d89bda9d953fd18590bcd451b590d39824995b964837d8a631e6d7",
       "make": "Ford",
       "model": "Explorer",
       "trim": "Active",
@@ -126,15 +164,15 @@
       "offerType": "lease",
       "monthly": null,
       "term": null,
-      "dueAtSigning": 1426,
+      "dueAtSigning": 1498,
       "mileageLimit": "31500",
-      "validThrough": "11/02/2026",
+      "validThrough": "11/30/2026",
       "title": "",
       "programName": "",
       "sourceUrl": "",
       "source": "ford.com",
-      "statusDate": "2026-11-03T04:59:16.000Z",
-      "scrapedAt": "2026-10-23T06:17:58.000Z"
+      "statusDate": "2026-11-05T05:06:45.000Z",
+      "scrapedAt": "2026-11-04T05:05:56.000Z"
     }
   ]
 }
