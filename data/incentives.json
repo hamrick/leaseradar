@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "updatedAt": "2026-11-08T06:13:06.497Z",
+  "updatedAt": "2026-11-08T13:36:50.961Z",
   "source": "MarketCheck OEM incentives",
   "listings": [
     {
@@ -152,11 +152,11 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-11-08T00:17:36.000Z",
+      "statusDate": "2026-11-08T06:20:23.000Z",
       "scrapedAt": "2026-11-03T11:46:15.000Z"
     },
     {
-      "id": "99eebcb021d89bda9d953fd18590bcd451b590d39824995b964837d8a631e6d7",
+      "id": "f849361558b8558333f37c07e48d5bbdec53fa055c7b85ff000fce5f6494715d",
       "make": "Ford",
       "model": "Explorer",
       "trim": "Active",
@@ -171,8 +171,8 @@
       "programName": "",
       "sourceUrl": "",
       "source": "ford.com",
-      "statusDate": "2026-11-06T05:29:49.000Z",
-      "scrapedAt": "2026-11-04T05:05:56.000Z"
+      "statusDate": "2026-11-08T04:13:15.000Z",
+      "scrapedAt": "2026-11-07T04:48:20.000Z"
     }
   ]
 }
