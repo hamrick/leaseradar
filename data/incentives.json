@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "updatedAt": "2026-11-10T07:26:35.753Z",
+  "updatedAt": "2026-11-10T19:49:04.401Z",
   "source": "MarketCheck OEM incentives",
   "listings": [
     {
@@ -76,7 +76,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-09T05:12:23.000Z",
+      "statusDate": "2026-11-10T07:46:03.000Z",
       "scrapedAt": "2026-11-03T23:22:43.000Z"
     },
     {
@@ -114,7 +114,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-09T05:12:34.000Z",
+      "statusDate": "2026-11-10T07:46:15.000Z",
       "scrapedAt": "2026-11-03T23:22:59.000Z"
     },
     {
@@ -152,7 +152,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-11-09T05:04:03.000Z",
+      "statusDate": "2026-11-10T07:40:06.000Z",
       "scrapedAt": "2026-11-03T11:46:15.000Z"
     },
     {
