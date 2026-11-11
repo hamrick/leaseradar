@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "updatedAt": "2026-11-10T19:49:04.401Z",
+  "updatedAt": "2026-11-11T06:37:50.990Z",
   "source": "MarketCheck OEM incentives",
   "listings": [
     {
@@ -57,7 +57,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-10T04:48:17.000Z",
+      "statusDate": "2026-11-11T05:12:23.000Z",
       "scrapedAt": "2026-11-04T03:04:26.000Z"
     },
     {
@@ -95,7 +95,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-10T05:46:41.000Z",
+      "statusDate": "2026-11-11T06:15:52.000Z",
       "scrapedAt": "2026-11-04T03:43:16.000Z"
     },
     {
@@ -133,7 +133,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "hyundaiusa.com",
-      "statusDate": "2026-11-10T05:46:41.000Z",
+      "statusDate": "2026-11-11T06:15:52.000Z",
       "scrapedAt": "2026-11-04T03:43:17.000Z"
     },
     {
@@ -171,7 +171,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "ford.com",
-      "statusDate": "2026-11-10T06:09:53.000Z",
+      "statusDate": "2026-11-11T06:36:36.000Z",
       "scrapedAt": "2026-11-07T04:48:20.000Z"
     }
   ]
