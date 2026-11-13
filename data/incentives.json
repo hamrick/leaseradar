@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "updatedAt": "2026-11-13T06:53:36.489Z",
+  "updatedAt": "2026-11-13T19:49:22.691Z",
   "source": "MarketCheck OEM incentives",
   "listings": [
     {
@@ -19,7 +19,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "kia.com",
-      "statusDate": "2026-11-12T07:35:40.000Z",
+      "statusDate": "2026-11-13T07:42:54.000Z",
       "scrapedAt": "2026-11-04T23:41:09.000Z"
     },
     {
@@ -38,7 +38,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "kia.com",
-      "statusDate": "2026-11-12T07:35:43.000Z",
+      "statusDate": "2026-11-13T07:42:55.000Z",
       "scrapedAt": "2026-11-04T23:41:43.000Z"
     },
     {
@@ -152,7 +152,7 @@
       "programName": "",
       "sourceUrl": "",
       "source": "jeep.com",
-      "statusDate": "2026-11-12T07:26:05.000Z",
+      "statusDate": "2026-11-13T07:33:52.000Z",
       "scrapedAt": "2026-11-03T11:46:15.000Z"
     },
     {
